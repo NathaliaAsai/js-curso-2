@@ -1,25 +1,27 @@
 //Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
 
+let peso = parseFloat(prompt('Qual é o seu peso em kg?'(ex.: 60.5)'));
+let altura = parseFloat(prompt('Qual é a sua altura em m? (ex.: 1.70)'));
 
 function imc(peso, altura) {
- let peso = prompt('Qual é o seu peso em kg?'(ex.: 60.5);
-function 
- let altura = prompt('Qual é a sua altura em m? (ex.: 1.70);
-
- let alturaQuadrado = altura * altura;
- return peso/alturaQuadrado
+let alturaQuadrado = altura * altura;
+return peso/alturaQuadrado;
 }
 
-console.log(seu imc é ${imc});
-if (imc>40.0){
- console.log('Obesidde grave - grau III');
- } else if (imc>=30.0 && <40.0){
+let imcCalc = imc(peso,altura);
+console.log('seu IMC é: ${imcCalc.toFixed(2)}');
+
+
+if (imcCalc>40.0){
+ console.log('Obesidade grave - grau III');
+ } else if (imcCalc>=30.0 && imcCalc<40.0){
  console.log('obesidade - grau II');
- } else if (imc >=25.0 && <30.0){
- console.log('sobrepeso - grau I,);
- } else if (imc>=18.5 && <25.0){
+ } else if (imcCalc >=25.0 && imcCalc<30.0){
+ console.log('sobrepeso - grau I');
+ } else if (imcCalc>=18.5 && imcCalc<25.0){
  console.log('normal');
- }else if (imc<18.5)
+ }else if (imcCalc<18.5)
+ console.log('magreza');
 }
  
 
